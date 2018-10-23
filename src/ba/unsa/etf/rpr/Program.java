@@ -14,12 +14,5 @@ public class Program {
         System.out.println(p);
         p.ispisi(s1);
         System.out.println(p);
-        //Interakcija s korisnikom
-        /*while(true) {
-            System.out.println("Za unos studenata unesite broj 1, a za unos predemeta unesite broj 2");
-            Scanner ulaz = new Scanner (System.in);
-            int opcija = ulaz.nextInt();
-
-        } */
     }
 }

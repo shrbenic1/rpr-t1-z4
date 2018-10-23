@@ -43,21 +43,28 @@ public class Predmet {
     public int getMaxBrojStudenata() {
         return maxBrojStudenata;
     }
+    @Override
     public String toString() {
         String s = "";
         boolean a = false;
+        int j = 0;
+        for(int i = 0; i<maxBrojStudenata; i++) {
+            if(niz[i] == null) continue;
+            j++;
+        }
         for(int i = 0; i< maxBrojStudenata; i++) {
             if(niz[i]==null) {
                 a = true;
                 continue;
             }
             if(a) {
-                System.out.print(i + ".");
+                s+=i + ". ";
             }
             else {
-                System.out.print(i+1 + ".");
+                s+=i + 1 + ". ";
             }
-            System.out.println(niz[i]);
+            s+=niz[i];
+            if (i<j-1) s+="\n";
         }
         return s;
     }

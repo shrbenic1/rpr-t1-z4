@@ -27,9 +27,8 @@ public class Student {
     public void setBrojIndexa(int brojIndexa) {
         this.brojIndexa = brojIndexa;
     }
+    @Override
     public String toString() {
-        String s = "";
-        System.out.println(prezime + " " + ime + " (" + brojIndexa + ")");
-        return s;
+        return prezime + " " + ime + " (" + brojIndexa + ")";
     }
 }
